@@ -2,7 +2,7 @@
   $minute = $_POST["minute"];
   $hour = $_POST["hour"];
 
-  $outputFile = "/var/www/html/lightupapp"
+  $outputFile = "/var/www/html/lightupapp";
   //$outputFile = "/etc/cron.d/lightup";
   exec('sudo sh -c "echo \'#!/bin/sh\n\' >> ' .$outputFile .'"');
   exec('sudo sh -c "echo \'SHELL=/bin/bash\n\' >> ' .$outputFile .'"');
